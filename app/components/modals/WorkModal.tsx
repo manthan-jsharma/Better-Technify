@@ -15,7 +15,7 @@ interface WorkModalProps {
   isOpen: boolean;
   onClose: () => void;
   onBookCall?: () => void;
-  featuredProjects: Project[];
+  featuredProjects?: Project[];
 }
 
 /**
