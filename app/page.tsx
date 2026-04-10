@@ -1,65 +1,88 @@
-import Image from "next/image";
+"use client";
+
+import { useEffect, useState } from "react";
+import Modal from "@/app/components/modals/Modal";
+import Navigation from "@/app/components/navigation/Navigation";
+import WorkNavigation from "@/app/components/navigation/WorkNavigation";
+import BookCallSection from "@/app/components/sections/BookCall";
+import Breather from "@/app/components/sections/Breather";
+import FAQSection from "@/app/components/sections/FAQ";
+import HeroSection from "@/app/components/sections/Hero";
+import PlansSection from "@/app/components/sections/Plans";
+import ProcessSection from "@/app/components/sections/Process";
+import ServiceSection from "@/app/components/sections/Services";
+import TestimonialsSection from "@/app/components/sections/Testimonials";
+import WorkSection from "@/app/components/sections/Work";
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalTab, setModalTab] = useState<"book-call" | "get-quote">(
+    "book-call"
+  );
+
+  const [isWorkModalOpen, setIsWorkModalOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isMobileView = window.matchMedia("(max-width: 767px)").matches;
+      document.body.style.overflowX = isMobileView ? "hidden" : "";
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    window.openBookCallModal = (
+      tab: "book-call" | "get-quote" = "book-call"
+    ) => {
+      setModalTab(tab);
+      setIsModalOpen(true);
+    };
+    return () => {
+      window.openBookCallModal = undefined;
+    };
+  }, []);
+
+  // Show desktop layout for larger screens
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="relative overflow-x-hidden md:h-[100vh] md:overflow-x-visible">
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        initialTab={modalTab}
+      />
+      <div className="md:h-full">
+        <div
+          id="horizontal-scroll"
+          className="flex w-auto flex-col flex-nowrap gap-10 md:h-full md:flex-row md:gap-40"
+        >
+          <HeroSection setIsWorkModalOpen={setIsWorkModalOpen} />
+          <ServiceSection />
+          <WorkSection
+            onBookCall={() => setIsModalOpen(true)}
+            isWorkModalOpen={isWorkModalOpen}
+            setIsWorkModalOpen={setIsWorkModalOpen}
+          />
+          <ProcessSection />
+          <TestimonialsSection />
+          <Breather
+            onBookCall={() => setIsModalOpen(true)}
+            isWorkModalOpen={isWorkModalOpen}
+            setIsWorkModalOpen={setIsWorkModalOpen}
+          />
+          <PlansSection />
+          <FAQSection />
+          <BookCallSection />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </div>
+      <Navigation onBookCall={() => setIsModalOpen(true)} />
+      {/* Show WorkNavigation above everything when WorkModal is open */}
+      {isWorkModalOpen && (
+        <WorkNavigation onBookCall={() => setIsModalOpen(true)} />
+      )}
     </div>
   );
 }

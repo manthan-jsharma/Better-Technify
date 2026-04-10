@@ -1,0 +1,172 @@
+[
+  {
+    "id": "impala-1",
+    "image": "/images/work/1cf680bd-c2b9-4329-a3d3-5a7d563fae5f.webp",
+    "aspectRatio": "1920/1380",
+    "title": "Impala",
+    "description": "",
+    "categories": ["Branding"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAfUlEQVR4nO3V3Q6AIAgG0O/9nzmhrSvMWPzVrOm41TOYAPjFg4X9vow0xCPYyLhJ+KUmwuchylySZZgmNbsHv7SJ8HlwYlI6eVSCaWlpyX0BY8PXaD2W7TOjR7cPTYexrc/qZ6PWzvVTPzWFObTPgvuFJ1+eqYPc9YXxUcYduzfsOHfbO3kAAAAASUVORK5CYII=",
+    "placeholderBackground": "linear-gradient(135deg, rgb(235, 233, 221) 0%, rgb(227, 224, 208) 100%)"
+  },
+  {
+    "id": "impala-2",
+    "image": "/images/work/fc04deea-2a9d-47dc-98ee-c524f2c5874a.webp",
+    "aspectRatio": "1920/1380",
+    "title": "Impala",
+    "description": "",
+    "categories": ["Product Design"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAABKklEQVR4nMXW0Q6DIAwFUP7/h6dCy6Ib2tZbKPNh5r7MuJwUsDbV3sVHyM/ngeiVnPvGKHtYZL9j1B+xU9IA5W84a5haprH2zy8gDBhLchwTBQmGy3YPIOvAS7fVUytmAGoBJI+9ZPdJ1GSNvKoItQJviImDcDHGeOClW1metFBeSsvx8yIZe9zBbmUJaTc2HUmWUHECa7tlygJMxKvFw9AatrI08GqR3uoXx1MYlIR3FqewDFfyMbYpTK8kxtCe/QNb9QGBe7bMY/roh06jd0BojNHcexZ61XimXYnmdLYPr4nUblm9Rswl1h577crFeo0fd/1xI+YOBjbPfNIIfdI4JsGxANQnV9X9XvN4HoEYz40hFJJio9w1XRnVDHfTA49TolHxHDeeHt8Wo9msjvcpDQAAAABJRU5ErkJggg==",
+    "placeholderBackground": "linear-gradient(135deg, rgb(226, 222, 217) 0%, rgb(215, 209, 202) 100%)"
+  },
+  {
+    "id": "poap-1",
+    "image": "/images/work/2fc007a6-ed24-4a28-ba42-95aac9e3df26.webp",
+    "aspectRatio": "1920/1380",
+    "title": "POAP",
+    "description": "",
+    "categories": ["Product Design", "Development"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAO0lEQVR4nO3NMQ0AMACEQPybbi38QJoOnADgPEQzA0pl1EyBk9k0U+BkNs0UOJlNMwVOZtNMgZP5cHYBl63tn3m9jZoAAAAASUVORK5CYII=",
+    "placeholderBackground": "linear-gradient(135deg, rgb(237, 238, 239) 0%, rgb(230, 231, 233) 100%)"
+  },
+  {
+    "id": "poap-2",
+    "image": "/images/work/ac89ff5f-3c05-441a-aef1-f5039602b3ec.webp",
+    "aspectRatio": "1920/1380",
+    "title": "POAP",
+    "description": "",
+    "categories": ["Product Design", "Development"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAABq0lEQVR4nM3W2Y7DIAwF0Pz/32YDjE0YEQgYs2Sm6sNU96GqqhzZEPDi6891hZDzSA7JWSSLBBZjDNgYDRBjQtKPBmz+p0VCJCRH7iIXnum9X96kitEGZoEEP95NMm+ZSF1GKTOKbkjhVRg5T2MpPvEM0U2MILve0paV16knpacfSuWcDdl4AUNyBRMNNBCwwGjgBQXg6EUlVXhlv0RMlJUbqM2NPVJm9pz9jF+OJ7xE7llEREqYc57cxcpKDVQqYrW0n50clXfXJ4tLWLtarKy7e1F6Hr2x7GMvb84+xnooy8o1bfu5bgfPJrx7/URxFrGDla2h4GywVlpnmPk7xno4wrZOJysM7JewlRX3jzGAwQaZtnFv2ijXrIeVrf+cHS+7ceMvgNggerobP3jPtvl7VrDqBOkv25dPED8qrvZKfZ+cjZTOxsllJs7i35z6Z7xo9ODUHxfHPejcZ4e80lQt8bIkxldu5KmXmxreb+puM1uPk00gzylFehpIAXufrsQwMh+wbJrpxHR1S9V0JTxRXzM3xr0aMpobhdTBKm8wqubetkZhGsl7/wNV4aXV8k9sFwAAAABJRU5ErkJggg==",
+    "placeholderBackground": "linear-gradient(135deg, rgb(211, 213, 217) 0%, rgb(194, 197, 202) 100%)"
+  },
+  {
+    "id": "poap-3",
+    "image": "/images/work/f554d658-dbc7-45a7-b28f-e0c71c0230c5.webp",
+    "aspectRatio": "1920/1380",
+    "title": "POAP",
+    "description": "",
+    "categories": ["Product Design", "Development"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAO0lEQVR4nO3NMQ0AMACEQPybbi38QJoOnADgPEQzA0pl1EyBk9k0U+BkNs0UOJlNMwVOZtNMgZP5cHYBl63tn3m9jZoAAAAASUVORK5CYII=",
+    "placeholderBackground": "linear-gradient(135deg, rgb(242, 233, 235) 0%, rgb(237, 224, 227) 100%)"
+  },
+  {
+    "id": "explorations-1",
+    "image": "/images/work/2b03f158-6514-465b-a747-d772716b0728.webp",
+    "aspectRatio": "1920/1380",
+    "title": "Explorations",
+    "description": "",
+    "categories": ["Product Design"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAA0klEQVR4nL3W7Q6FIAgGYO7/jjOBVues+QGKqLX3Z/XMJBD4wwu8D1KeLRj1sgZ7X4d6qE2Ci4lSMCc9mIWJFSl7YJbSN55SYtcDg9RggkKiuH8a9t5aSnQnpOF/NK+DyVLN9DwqPCP2kwrseBIkT14c2HZLk2rvlBY3glXLOvBJ4fEEpn5DHMbIieFSjOxY4gVLjXyzZ+Soxlbp01zpD/zUZGsiMNQYaUO7YmVxaXu8o/d+HMI63vIRw/mM7o7NODk8ixPO9mMB6+SWA49Ieo5yF1hd5kPMAAzBAAAAAElFTkSuQmCC",
+    "placeholderBackground": "linear-gradient(135deg, rgb(226, 231, 218) 0%, rgb(215, 221, 204) 100%)"
+  },
+  {
+    "id": "score-1",
+    "image": "/images/work/5e6b4522-b665-45bd-814d-19d34f25b5ea.webp",
+    "aspectRatio": "1920/1380",
+    "title": "Score",
+    "description": "",
+    "categories": ["Branding"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAsUlEQVR4nNXW2QrEIAwF0Pz/L2uuQxcYiUti0imO3IdSqIdYDVJ5cdDWGEoB7vwQA2Z5DOvOzu3LEsbq2ZkHgckjq8R6oHm0KuUzKR+5nll45yZyYkK6mDq5Xc+BR/ayulLrwY1ZpCS8ODaXkijuVQz7VwazlyP/bGmP5KYsJzb35LmG91BP2lXbO7iSopjeHqFIa11/2Pjx7Rqhrt8lOym6tHwt8Bl/cuGJDAp9vTP2AYV16FDHZGL2AAAAAElFTkSuQmCC",
+    "placeholderBackground": "linear-gradient(135deg, rgb(223, 224, 233) 0%, rgb(210, 213, 225) 100%)"
+  },
+  {
+    "id": "sora-1",
+    "image": "/images/work/ce4bc2c6-ad7d-4a35-9e2c-e1aee9d3d241.webp",
+    "aspectRatio": "1920/1380",
+    "title": "Sora",
+    "description": "",
+    "categories": ["Branding"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAO0lEQVR4nO3NMQ0AMACEQPybbi38QJoOnADgPEQzA0pl1EyBk9k0U+BkNs0UOJlNMwVOZtNMgZP5cHYBl63tn3m9jZoAAAAASUVORK5CYII=",
+    "placeholderBackground": "linear-gradient(135deg, rgb(241, 237, 237) 0%, rgb(236, 230, 230) 100%)"
+  },
+  {
+    "id": "relay-1",
+    "image": "/images/work/24f474ea-8b3e-43fc-b0d3-4963fc5d2680.webp",
+    "aspectRatio": "1920/1380",
+    "title": "Relay",
+    "description": "",
+    "categories": ["Product Design", "Development"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAO0lEQVR4nO3NMQ0AMACEQPybbi38QJoOnADgPEQzA0pl1EyBk9k0U+BkNs0UOJlNMwVOZtNMgZP5cHYBl63tn3m9jZoAAAAASUVORK5CYII=",
+    "placeholderBackground": "linear-gradient(135deg, rgb(230, 228, 229) 0%, rgb(220, 218, 219) 100%)"
+  },
+  {
+    "id": "swapman-1",
+    "image": "/images/work/7d984ea7-ff91-4d1f-8b63-13b4ffb3cda1.webp",
+    "aspectRatio": "1920/1380",
+    "title": "Swapman",
+    "description": "",
+    "categories": ["Branding"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAABMklEQVR4nMXW22rDMAwGYL//O64d6SHBmc/C1yMWFcKKUtha978MJR+/4iYytVYAKKXknFNKMcYQgvfeOffTsrbYlkUEr1tr13XF3zvnvPchhBhjSinnXEoBgFqrqbVqEjF431nJwlQkNc8AgCYhg3e8P3JjoYvzQz3wNgxrHUjcuIpwddY9LGeoliZx5iLSkbPiYTlDA9QkzkwiHXnf82iYG8YHKCXOfIt05E14vJyhp8VrdZ04c2bh5EV4styGHdciiYxTS0dOzTsot2E0Q1mLT48zPAfewp4cTtJ0M9ytpUmdN+2VUzFthhz7YvkAdmoencxdDM/I2zFr7Sux89/GOOiAuDFHP478U8eRr6s08kWcRn5i8siPZxm5FsCzhYeT/1146shV7iVLKv7m6ZL6C56o7F/LHgSIAAAAAElFTkSuQmCC",
+    "placeholderBackground": "linear-gradient(135deg, rgb(188, 188, 188) 0%, rgb(162, 162, 162) 100%)"
+  },
+  {
+    "id": "swapman-2",
+    "image": "/images/work/deb1ef92-9280-4983-92ac-c3c457979c33.webp",
+    "aspectRatio": "1920/1380",
+    "title": "Swapman",
+    "description": "",
+    "categories": ["Branding"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAABzklEQVR4nLXW2U7EMAwF0Pz/zw60zWSPUXbHditAgPxUDT26jpNGZYAMkAAiQADwuZRLYBPYkE2td4irHCr03IRsa7lU/t1nCLm8MNaXZyh/6lma79IuahekikhNhnkNa54SJRyoMZcLl5VLTxVF5F7BYsOmFBuTOHNaX8qgqk8uRMreaKaasUgmLDXjkGojneDhcCrgWFPyXTqrhN7uPt+rDuMweXWP9nOGUyTWbCCXMLOTHntz/Xg4hKFYo3uhM0P6eFtckhdQuDqcaOVUkfJTLCK9tJmFyaN5D+E4VlcrbrGG9NKbRD3jxHC4k2pfsBYrklg8EyrLwrWd8DMs/DeW6nTcYfYvsPx9jHjlyUdfM/9LjM/97vXa9oDp04gHhGy1m2mso3+wGSGeNPoBnyNs9EHcZ6uT3BP2tZF7SDc1P656J0k46RDh0vl8gnRsC7d5Wz5yQuLj3y5J++1Dug5i/okpWEitmcsb5FQJc0pSiZVFrIaTvL5+g1y1GBuu8v1bEmlg/57hawHx0HCuiKQacz1IInbrbaRQejBcwrEyvV0xj5JVXeUZE26ljmFv5usXup0UizB9IpC07o0wWOKJpFjtB+0uNWePSwDwBb1frvGjQPnNAAAAAElFTkSuQmCC",
+    "placeholderBackground": "linear-gradient(135deg, rgb(205, 217, 222) 0%, rgb(185, 202, 210) 100%)"
+  },
+  {
+    "id": "high-1",
+    "image": "/images/work/ea16b4b9-b1bb-4c18-990d-fbf4f473b7e5.webp",
+    "aspectRatio": "1920/1380",
+    "title": "High",
+    "description": "",
+    "categories": ["Branding"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAA5ElEQVR4nM3W3RKEIAgFYN//kZWDO7V/gqSQtbPNuerCb0gTUv3hk/4c4y7XY70RVlOQQYUMY3vp86bYexVlgITHLnKM9dVQBTEVplKJtuxvGnLkJbf0MlQEyRNvhg0l26uIYqIsDZQmytP758e6slC+ab1qeF7MLquVUHJXXFnARmXlPVZxuAvL9pfkdtvuxkDXY3zlZ6zGuTeO4vJpHP7RLglx7OinNm8QancLS9dV5G7E2btRNBc6LAhzydlijC4jwh9mJEWa53Otvk1rhtdnEDkZiLB/DAlNV+dHnROYUsPPAyqO5PHt/NjPAAAAAElFTkSuQmCC",
+    "placeholderBackground": "linear-gradient(135deg, rgb(228, 224, 222) 0%, rgb(218, 212, 209) 100%)"
+  },
+  {
+    "id": "high-2",
+    "image": "/images/work/cef86790-c6c9-4fd8-bf2b-3372c26af20c.webp",
+    "aspectRatio": "1920/1380",
+    "title": "High",
+    "description": "",
+    "categories": ["Branding"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAB/0lEQVR4nL2W627DIAyFef9X7ZIA4RIgaSduBgxJl02rdH5klZZPx3bsQ17H/tzd4dzh7G7NbjZnNrcpuymrldFyU1FCy7XXpkSQNFoaHf5rU9ZoZzf/NmeO3T539zr21+sgNSlgdIspDCV4FgsKzw01IIFnIs8CL8Kyp2woumkZHiB5FJWcqpV5RbBcVXYZLErECzBHKlLyBBjdMDxAMiq8FsGW9AuAAxIKW3i28MhhbewTIkU3CZMBSXT2gj/5UpDFYm5h5IXmkdwqqJ5ApAxYVjoPxDK140H//PuDOQIFNNmWJ62BFA0BZpmieJB/RkgOPD84uJjOkNpWLmBHWmZg8GVi8xc8eypteGlwoJiVOYK6lW0NSGz+6tXz5Lk50nerspWqd0bqeSLPC5hLnUOwai5qWwMSnR50eiAYT+Y8LBWzruQYtl7BIgY0MMeqzqWxTN+AMz+AsXkaku7AZILZf4eJT8Jkgd0dkDMSvzUgnxl9PdhV7frgdz5qcfVRo32fK/nrdSX7GsK6SovYn2Y8Ju8XMSYtbxbxmxMDl2x4X6BPbLzyuxNzcqbbk9Ycz4ZxdTwlPp591EG8dNvC6wI1gzkVt2OBq6PVWeCp007OIzzcrYy5DjzHbn3gSVHOYh6Kcv51TY4rUQ4ZKtEjtapER4JCal1PsBhf9PeQ+g3FlHYme9KSzwAAAABJRU5ErkJggg==",
+    "placeholderBackground": "linear-gradient(135deg, rgb(211, 206, 201) 0%, rgb(195, 187, 180) 100%)"
+  },
+  {
+    "id": "artemis-1",
+    "image": "/images/work/03f7c36b-1a23-4602-b524-b4353c0b9f39.webp",
+    "aspectRatio": "1920/1380",
+    "title": "Artemis",
+    "description": "",
+    "categories": ["Product Design"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAACRElEQVR4nM2W2Y6sIBiEef8XPHa7IYuo7Jq5nwCC4LEz3dNJZ5K6kQu+VP0gBbbty9rNGKu0kUoLqbiQCxfzzKdpYWwex2kcJ0KZExlxJuLECGWUsnGcGJsZm+eZL4vgXAqhpNJKG2Osteu2fQG7bsasOpG4XBZHChjqGW5rPCJMnRBFiOzyKxhTB86Q17x1A8auWlulzP+k3YrHDIgMiEBIIMSZ3OLgqQkZeNO05DytjbEr0MaRpNQuvZKEiXcTGX2Pgrpu6LohfcJIRY94UilltLFgD1CoMKcTybvBGQO27aGugwkMIXY8RDE+eC5PLriQUrowQQpwXsQ0LZekrhsioG+aQonaR4snf/PMkzlwsuVOxJnktou7d3VdKCE7z+t7lPKklB1henMgTKuwhUd0QQq7t/f7obpuPa/zvD75GxDBmBIynsyBPcPd1hQChJCk9BIpMprbzel+b0pkn+VZmAuTE0KBkGExrcJWQbrdmipTQtaHv9Kcn1xKEnChliLDfVrJVkovkuqq8rrVkddGXjA3pMmlJBPMXa/9xBMWjkaeYbQVDVX1v6iwcs/MpcmdYPOvYAfJwarDXF3Cwtg8bB8b538b1rwZo/rcARFvHP3q1aMvikvNnr/Umac22up/uNQf/V3JT/6I1btPTJ+TXIDo0ROj33884QuP54+1YHhQC1IzgL6PxCYSSOy6FsTCc1Gt8l4VC0/ednbG8KDwuIt8KjyvV7nY43xol1XuVK2OKvdMSQ1I10fLkrr31KdL6jd8s8Cx//qeHwAAAABJRU5ErkJggg==",
+    "placeholderBackground": "linear-gradient(135deg, rgb(179, 180, 186) 0%, rgb(150, 151, 159) 100%)"
+  },
+  {
+    "id": "aqtive-1",
+    "image": "/images/work/391aad76-2ff4-4ebf-909c-3d0eec0c5bec.webp",
+    "aspectRatio": "1920/1380",
+    "title": "Aqtive",
+    "description": "",
+    "categories": ["Web Design"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAC0klEQVR4nM2W2W7cMAxF9f8/mPE2ydiWXVu78wMFRYmiNE4L9KkCHwIDmYN7uYrr+woheO+ts8YarbVS6jzPX/Ht+y63TUq5ynVd1wViYRGfXKWUctv2fcf/Os9TKaW1NtZY55z3IYTr+xLhuift+75lDPzusszLPC/zay6BX+YlUuW6MuRxHGfDu4LwwTvn3klyYxj46dfX3XvNr0xNSLnJime0sdY654MXzjtrrTb3pCglYT7je7KHX74SFZDLujQ8pZU2xljrvBfOWWOM1m+kKIgwBJjY49SvrLLhnepUOuKcEyTrOI5KUySRmmmaxmkcx3GAGGLA3+M0IpUkMn2QP26m4LKwIsg9EjROmTEM/dDnGPohUcdpTK5GfZEH9cLMBHGilbWCgZgnhEVSxvR9x4KoA+Ohn1gvaGYWZ4TW+lQ5WygrG9iQur7r+u7RlYhfeuJxP6FcwMwqc4J7iHWBslKexrGQAPCoo/CGMfM+n7k4U+bISaF05SHPFsqC3IBpifTxKFHzBm4mczKVidJKNAmbl9bDShYwPlgQr0dxPHNYJjxtDJbr8BYWk4SCbmHd/wzb/mTj32D9P8LeCgS76qcCeTxKgRQYtTbBYoHE0seFwju6Kv2+Ln18rPr7utWor9vSp6ZOfXbX1Hl2IK9p6u5dFvYZNvUWYbmp47gq8z47WcRRt2U/WdD4GJDEZb2NKw2DGJ38SRzxCMlnMQ3i6W5WMQ/jbLRxR5fxWC8zPvjL7C9RME9mYM4WkwX3gRVwfTBx2HBYKc1KK1stB8d8MhIYWO0XkGWdFc6Vs+A4DtpqxKN109wEb5gXkagu+OZ0zgnv48EDK1Qrdba8OFP4wYO/Xl8fr3KApBOrkGBtxgPLey/K0Rh5Z+ZR/pLEhAQqC7qrkqDmtMrXB1w7IQRxXXCk4o2V9dWnIyHxQuWv3KmA2eqjMVZFPOO88yFc1/Ub3/Ky2OoX29kAAAAASUVORK5CYII=",
+    "placeholderBackground": "linear-gradient(135deg, rgb(178, 180, 179) 0%, rgb(149, 151, 150) 100%)"
+  },
+  {
+    "id": "evm-1",
+    "image": "/images/work/04d62a8f-878d-4e45-894b-b4447f1153a1.webp",
+    "aspectRatio": "1920/1380",
+    "title": "EVM",
+    "description": "",
+    "categories": ["Product Design"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAO0lEQVR4nO3NMQ0AMACEQPybbi38QJoOnADgPEQzA0pl1EyBk9k0U+BkNs0UOJlNMwVOZtNMgZP5cHYBl63tn3m9jZoAAAAASUVORK5CYII=",
+    "placeholderBackground": "linear-gradient(135deg, rgb(250, 251, 251) 0%, rgb(248, 249, 249) 100%)"
+  },
+  {
+    "id": "evm-2",
+    "image": "/images/work/fc174ad5-8af4-4d22-86dc-ebf0755e5f3f.webp",
+    "aspectRatio": "1920/1380",
+    "title": "EVM",
+    "description": "",
+    "categories": ["Product Design"],
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAIAAABQEmkSAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAO0lEQVR4nO3NMQ0AMACEQPybbi38QJoOnADgPEQzA0pl1EyBk9k0U+BkNs0UOJlNMwVOZtNMgZP5cHYBl63tn3m9jZoAAAAASUVORK5CYII=",
+    "placeholderBackground": "linear-gradient(135deg, rgb(237, 241, 245) 0%, rgb(230, 236, 241) 100%)"
+  }
+]

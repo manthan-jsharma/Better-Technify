@@ -1,5 +1,44 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
+# Dependencies
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+
+/coverage
+
+# Next.js build output
+
+/.next/
+/out/
+
+# Production
+
+/build
+
+# Environment variables
+
+.env\*.local
+
+# Vercel
+
+.vercel
+
+# Debug
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log\*
+
+# Misc
+
+.DS_Store
+\*.pem
+
+# IDEs and editors
+
+.idea/
+.vscode/
+_.swp
+_.swo

@@ -1,0 +1,227 @@
+{
+  "hero": {
+    "clientsLabel": "Trusted by teams building real products:",
+    "callsBooked": "Open for projects",
+    "heading": "Our clients raised $200M+. Yours could be next.",
+    "subheading": "Design & development studio for startups that need to ship fast,<br/>look credible, and stop bleeding money on freelancers."
+  },
+  "services": {
+    "heading": "<span>Ship products that raise money</span> <span class=\"text-gray-800\">and convert users.</span>",
+    "description": "We've helped startups raise over $200M combined. From fintech to AI to Web3. our team builds the brands, products, and websites that get you funded, launched, and growing.<br/><br/>Senior designers and developers. 25+ years combined experience. A founder's mentality. because we've been there.<br/><br/>No fluff. No 90-day timelines. Just work that moves the needle.",
+    "columns": [
+      {
+        "title": "Product",
+        "items": [
+          "Web Apps",
+          "Dashboards",
+          "Mobile Apps",
+          "Defi Apps",
+          "Crypto Exchanges",
+          "Physical"
+        ]
+      },
+      {
+        "title": "Brand",
+        "items": [
+          "Brand Strategy",
+          "Logo System",
+          "Pitch Decks",
+          "Brand Guidelines",
+          "Illustrations",
+          "Animations"
+        ]
+      },
+      {
+        "title": "Website",
+        "items": [
+          "Ecommerce",
+          "Crypto/Web3",
+          "Venture Firms",
+          "SaaS",
+          "Portfolios",
+          "Landing Pages"
+        ]
+      },
+      {
+        "title": "Development",
+        "items": [
+          "Websites",
+          "Web Apps",
+          "Mobile Apps",
+          "Defi Platforms",
+          "Databases",
+          "Auditing / Consulting"
+        ]
+      }
+    ]
+  },
+  "work": {
+    "projects": {
+      "project-one": {
+        "title": "Relay Project",
+        "description": "A brief description of the Relay project goes here."
+      }
+    },
+    "heading": "Here's what <br/>momentum<span class=\"text-gray-800\"> looks like.</span>"
+  },
+  "process": {
+    "heading": "Focused.<span> Frictionless.</span> <span class=\"text-gray-800\">Founder-first.</span>",
+    "columns": [
+      {
+        "title": "Senior designers (& developers),<br/>for a fraction of the cost.",
+        "body": [
+          "We're a tight-knit global team of senior designers and developers who've shipped products across fintech, AI, Web3, and consumer apps.",
+          "You get the output of a full creative team at a fraction of what a single senior hire would cost you."
+        ]
+      },
+      {
+        "title": "Structured, lightning-fast deliverables. <br/>Built for conversion.",
+        "body": [
+          "From ideation to hand-off, we move with precision, speed, and purpose. Our process is lean, our timelines are narrow, and our deliverables are designed to perform.",
+          "Most requests land in 1-3 business days. Bigger projects in 2-4 weeks. No corners cut."
+        ]
+      },
+      {
+        "title": "We work inside your team. </br>Not around it. ",
+        "body": [
+          "Think of us as a full extension of your team. We get how you work, speak your language, and focus completely on shipping your project. <br/><br/>All whilst giving your Slack jokes the credit they deserve."
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "Founders talk.<br/> <span class=\"text-gray-800\">Here's what they're saying.</span>",
+    "columns": [
+      {
+        "quote": "You guys are legends, can't thank you enough. Getting such good feedback on the app from the community",
+        "author": "Steve McFadyen",
+        "role": "Founder, POAP Global",
+        "date": "March, 2025",
+        "image": "/assets/testimonials/steve.jpg"
+      },
+      {
+        "quote": "It's a delight to work with this team. Outpace knocked it out of the park with our product and milestones!",
+        "author": "Frank Roskam",
+        "role": "Co-Founder, Celebratix",
+        "date": "February, 2025",
+        "image": "/assets/testimonials/frank.jpg"
+      },
+      {
+        "quote": "Amazing designers that live and breath web3. Every design choice they made showed deep strategic thinking and a passion for our mission.",
+        "author": "Pedro Galván",
+        "role": "Head of Product, AITA Protocol",
+        "date": "January, 2025",
+        "image": "/assets/testimonials/pedro.jpg"
+      },
+      {
+        "quote": "We've worked closely with the team, and they absolutely nailed the product and our vision.",
+        "author": "Dan Korogodsky",
+        "role": "Co-Founder, Essai",
+        "date": "December, 2024",
+        "image": "/assets/testimonials/dan.jpg"
+      },
+      {
+        "quote": "Outpace totally leveled us up. Fast, sharp, and they get Web3. The Glide site looks slick, runs smooth, and just vibes. Absolute legends.",
+        "author": "Ryan Colette",
+        "role": "Co-Founder, Glide Finance",
+        "date": "November, 2024",
+        "image": "/assets/testimonials/ryan.jpg"
+      },
+      {
+        "quote": "Outstanding, modern designs with a keen eye for product, branding and user experience. 10/10",
+        "author": "Benjamin Piette",
+        "role": "Product Team Lead, Elastos Foundation",
+        "date": "October, 2024",
+        "image": "/assets/testimonials/benjamin.jpg"
+      },
+      {
+        "quote": "Thanks for your amazing work guys, conversions have gone way up! Everything you've delivered over the past few months has been impressive.",
+        "author": "Kiarash 'Hoss' Hossainpour",
+        "role": "Entrepreneur, Investor, #1 Best-selling author",
+        "date": "April 2025",
+        "image": "/assets/testimonials/kian.jpg"
+      },
+      {
+        "quote": "Forward thinking, creative team with great chemistry. Ahead of the curve when it comes to the latest design trends! Would recommend for those who prioritise branding, UI and UX.",
+        "author": "Maas de Goede",
+        "role": "Co-Founder, Ingenius",
+        "date": "January 2025",
+        "image": "/assets/testimonials/maas.jpg"
+      }
+    ]
+  },
+  "faq": {
+    "heading": "Frequently <span class=\"text-gray-800\"><br/>Given Answers.</span>",
+    "needMore": "Looking for something in particular? <br/>Don't hesitate to reach out.",
+    "items": [
+      {
+        "question": "What does Outpace actually do?",
+        "answer": "We design and build brands, products, and websites that ship fast and scale even faster. Whether you're pre-launch or post-raise, we help you move with clarity and momentum."
+      },
+      {
+        "question": "What sets Outpace apart?",
+        "answer": "Speed, quality, and custom development. all from one team. Senior talent, streamlined process, zero fluff. We integrate directly into your workflow and ship work that moves the needle. Think in-house, but faster."
+      },
+      {
+        "question": "Who do we best work with?",
+        "answer": "Founders, startups, agencies. Teams building something real who need senior design and dev firepower without the agency bloat. If that's you. we're in."
+      },
+      {
+        "question": "How does the onboarding work?",
+        "answer": "Kickoff call or form. your choice. We align on your goals, craft a proposal that fits, and once payment (fiat or crypto) is sorted, we typically start work within 24-48 hours."
+      },
+      {
+        "question": "Why not just hire in-house?",
+        "answer": "You could. but we're faster to onboard, easier to manage, more flexible and cost a fraction of what a full-time senior hire runs. Senior-level quality, none of the overhead."
+      },
+      {
+        "question": "What if I don't love the work?",
+        "answer": "We'll make it right. We include unlimited revisions during active work. Feedback is fuel. We use it to get to great results."
+      },
+      {
+        "question": "How fast do you deliver?",
+        "answer": "Fast. Most requests land in 1-3 business days. Bigger requests take longer, because we want to get things right. not just get them done."
+      },
+      {
+        "question": "So you also do development?",
+        "answer": "Definitely. We've got in-house senior developers experienced in front-end, back-end, and blockchain smart contracts. Next.js, React Native, Solidity and beyond. Design-to-build? We've got you."
+      }
+    ]
+  },
+  "bookCall": {
+    "heading": "Let's talk <span class=\"text-gray-800\">product.</span>",
+    "description": "20-minute call. Tell us where you're headed.<br/>We'll show you how to get there faster.",
+    "tabs": { "getQuote": "Get a Quote" }
+  },
+  "breather": {
+    "heading": "You're building the company. <br/><br/>We're building everything around it. <br/><br/>Design. Development. Shipped.<br/><br/>Sound good?"
+  },
+  "plans": {
+    "cryptoPaymentsAccepted": "Crypto payments accepted",
+    "label": "Plans & Pricing",
+    "heading": "It's a <span class=\"text-gray-800\">Marathon.</span><br />Or a <span class=\"text-gray-800\">Sprint.</span>",
+    "description": "Some products need continuous momentum. Others need focused precision. Two ways to work with us, both backed by senior talent, a dedicated PM, and custom development.",
+    "items": [
+      {
+        "heading": "Marathon",
+        "description": "Your design and dev team, month to month",
+        "price": "<span class=\"text-sm text-white tracking-normal\">Starting at</span><span class=\"inline-flex items-baseline\"><span>$10k</span><span class=\"text-sm ml-1 tracking-normal\">/month</span></span>",
+        "features": [
+          "Senior designers + dedicated PM",
+          "In your Slack, shipping every week",
+          "We own the design process, you stay focused on product"
+        ]
+      },
+      {
+        "heading": "Sprint",
+        "description": "Fixed scope, fixed timeline, done",
+        "price": "<span class=\"text-sm text-gray-600 tracking-normal\">Starting at</span>$6k",
+        "features": [
+          "Dedicated designer + PM, delivered in 2-4 weeks",
+          "Clear deliverables, no surprises",
+          "Custom development included"
+        ]
+      }
+    ]
+  }
+}
