@@ -145,30 +145,31 @@ const Ticker: React.FC<TickerProps> = ({
 
 interface IconProps {
   src: string;
-
   className?: string;
   alt?: string;
+  name?: string;
 }
 
-/**
- * Icon component that auto-calculates width to keep optical size consistent
- */
 export const TickerIcon: React.FC<IconProps> = ({
   src,
   className = "",
   alt = "",
+  name,
 }) => {
   return (
-    <img
-      src={src}
-      alt={alt}
-      className={className}
-      style={{
-        display: "block",
-      }}
-      loading="lazy"
-      decoding="async"
-    />
+    <div className="flex items-center gap-2">
+      <img
+        src={src}
+        alt={alt}
+        className={className}
+        style={{ display: "block" }}
+        loading="lazy"
+        decoding="async"
+      />
+      {name && (
+        <span className="text-sm font-medium text-gray-600">{name}</span>
+      )}
+    </div>
   );
 };
 

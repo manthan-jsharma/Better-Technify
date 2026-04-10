@@ -96,7 +96,7 @@ export default function Calendar({
     >
       <CalComponent
         namespace={namespace}
-        calLink="outpace/intro-modal"
+        calLink="manthan-sharma-xygn6r/15min"
         style={{
           width: "100%",
           height: "100%",

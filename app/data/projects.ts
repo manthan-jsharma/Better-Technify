@@ -18,6 +18,7 @@ export type Project = {
   placeholderBackground: string | null;
   disciplines: WorkDiscipline[];
   categories: WorkDiscipline[];
+  liveUrl?: string;
 };
 
 type CatalogEntry = {
@@ -30,6 +31,7 @@ type CatalogEntry = {
   placeholderBackground?: string | null;
   disciplines?: WorkDiscipline[];
   categories?: WorkDiscipline[];
+  liveUrl?: string;
 };
 
 function toProject(entry: CatalogEntry): Project {
@@ -50,6 +52,7 @@ function toProject(entry: CatalogEntry): Project {
     placeholderBackground: entry.placeholderBackground ?? null,
     disciplines: uniqueDisciplines,
     categories,
+    liveUrl: entry.liveUrl,
   };
 }
 

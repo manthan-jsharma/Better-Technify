@@ -7,11 +7,7 @@ import { ReactLenis } from "lenis/react";
 import Image from "next/image";
 import posthog from "posthog-js";
 import React from "react";
-import { projects as allProjects } from "@/app/data/projects";
-
-const legacyProjects = allProjects.filter(
-  (project) => !project.id.startsWith("work-")
-);
+import type { Project } from "@/app/data/projects";
 
 import Masonry from "react-responsive-masonry";
 
@@ -19,6 +15,7 @@ interface WorkModalProps {
   isOpen: boolean;
   onClose: () => void;
   onBookCall?: () => void;
+  featuredProjects: Project[];
 }
 
 /**
@@ -26,13 +23,12 @@ interface WorkModalProps {
  * Displays a vertical, scrollable masonry list (2 columns) of projects.
  * No external UI libraries are used – only Tailwind utilities.
  */
-const WorkModal: React.FC<WorkModalProps> = ({ isOpen, onClose }) => {
+const WorkModal: React.FC<WorkModalProps> = ({ isOpen, onClose, featuredProjects = [] }) => {
   React.useEffect(() => {
     if (isOpen) {
       document.body.classList.add("workmodal-open");
-      // Track work modal opened
       posthog.capture("work_modal_opened", {
-        projects_count: legacyProjects.length,
+        projects_count: featuredProjects.length,
       });
     } else {
       document.body.classList.remove("workmodal-open");
@@ -40,48 +36,22 @@ const WorkModal: React.FC<WorkModalProps> = ({ isOpen, onClose }) => {
     return () => {
       document.body.classList.remove("workmodal-open");
     };
-  }, [isOpen]);
-  // Use the same device detection logic as ScrollProvider
+  }, [isOpen, featuredProjects.length]);
+
   const isDesktop = typeof window !== "undefined" && window.isDesktopView;
 
   const [shouldRender, setShouldRender] = React.useState(isOpen);
-  // Infinite scroll: maintain a local state for grid items
-  const [gridItems, setGridItems] = React.useState([...legacyProjects]);
+  const [gridItems, setGridItems] = React.useState([...featuredProjects]);
   const [isFetching, setIsFetching] = React.useState(false);
+
+  React.useEffect(() => {
+    if (isOpen) setGridItems([...featuredProjects]);
+  }, [isOpen, featuredProjects]);
 
   const backdropRef = React.useRef<HTMLDivElement>(null);
   const modalLenisRef = React.useRef<LenisRef | null>(null);
   const contentRef = React.useRef<HTMLDivElement>(null);
   const closeBtnRef = React.useRef<HTMLButtonElement>(null);
-
-  // Reset grid items when modal opens/closes
-  React.useEffect(() => {
-    if (isOpen) {
-      setGridItems([...legacyProjects]);
-    }
-  }, [isOpen]);
-
-  // Infinite scroll: append more items when near bottom
-  React.useEffect(() => {
-    if (!shouldRender || !isOpen) return;
-    const container = modalLenisRef.current?.wrapper as HTMLDivElement | null;
-    if (!container) return;
-    const handleScroll = () => {
-      if (
-        container.scrollHeight - container.scrollTop - container.clientHeight <
-          1500 &&
-        !isFetching
-      ) {
-        setIsFetching(true);
-        setTimeout(() => {
-          setGridItems((prev) => [...prev, ...legacyProjects]);
-          setIsFetching(false);
-        }, 400); // simulate async fetch
-      }
-    };
-    container.addEventListener("scroll", handleScroll);
-    return () => container.removeEventListener("scroll", handleScroll);
-  }, [isFetching, shouldRender, isOpen]);
 
   /**
    * Custom Lenis modal scroll logic:
@@ -89,6 +59,24 @@ const WorkModal: React.FC<WorkModalProps> = ({ isOpen, onClose }) => {
    * - When modal closes, destroy the modal Lenis and restart main Lenis.
    * - This ensures smooth vertical scroll inside the modal, without affecting the main horizontal scroll.
    */
+  // Infinite scroll: append more items when near bottom
+  React.useEffect(() => {
+    if (!shouldRender || !isOpen || featuredProjects.length === 0) return;
+    const container = modalLenisRef.current?.wrapper as HTMLDivElement | null;
+    if (!container) return;
+    const handleScroll = () => {
+      if (container.scrollHeight - container.scrollTop - container.clientHeight < 1500 && !isFetching) {
+        setIsFetching(true);
+        setTimeout(() => {
+          setGridItems((prev) => [...prev, ...featuredProjects]);
+          setIsFetching(false);
+        }, 300);
+      }
+    };
+    container.addEventListener("scroll", handleScroll);
+    return () => container.removeEventListener("scroll", handleScroll);
+  }, [isFetching, shouldRender, isOpen, featuredProjects]);
+
   // Close modal on Escape key
   React.useEffect(() => {
     if (!isOpen) return;
@@ -277,50 +265,62 @@ const WorkModal: React.FC<WorkModalProps> = ({ isOpen, onClose }) => {
               {gridItems.map((project, idx) => (
                 <div
                   key={`${project.id}-${idx}`}
-                  className="workmodal-image-anim group relative w-full snap-start overflow-hidden rounded-2xl bg-gray-100"
-                  style={
-                    project.placeholderBackground
-                      ? { background: project.placeholderBackground }
-                      : undefined
-                  }
+                  className="workmodal-image-anim group w-full snap-start overflow-hidden rounded-2xl"
                 >
-                  {project.image ? (
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      width={800}
-                      height={600}
-                      className="h-auto w-full object-cover"
-                      quality={90}
-                      sizes="(max-width: 640px) 100vw, 50vw"
-                      loading={idx < 12 ? "eager" : "lazy"}
-                      placeholder={project.blurDataURL ? "blur" : "empty"}
-                      blurDataURL={project.blurDataURL || undefined}
-                    />
-                  ) : (
-                    <div className="aspect-video w-full bg-gray-100" />
-                  )}
+                  {/* Image */}
                   <div
-                    className="absolute top-4 left-4 z-10 flex gap-1"
-                    style={{ pointerEvents: "none" }}
+                    className="w-full"
+                    style={
+                      project.placeholderBackground
+                        ? { background: project.placeholderBackground }
+                        : { background: "#f3f4f6" }
+                    }
                   >
-                    {project.categories.map((cat) => (
-                      <div
-                        key={cat}
-                        className={`pointer-events-none w-fit -translate-y-4 scale-90 rounded-full bg-gray-800/40 px-3 py-1.5 text-sm font-semibold text-white opacity-0 blur-[24px] filter transition-all duration-300 group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100 group-hover:blur-none`}
-                      >
-                        {cat}
+                    {project.image ? (
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        width={800}
+                        height={600}
+                        className="h-auto w-full object-cover"
+                        quality={90}
+                        sizes="(max-width: 640px) 100vw, 50vw"
+                        loading={idx < 4 ? "eager" : "lazy"}
+                        placeholder={project.blurDataURL ? "blur" : "empty"}
+                        blurDataURL={project.blurDataURL || undefined}
+                      />
+                    ) : (
+                      <div className="aspect-video w-full" />
+                    )}
+                  </div>
+
+                  {/* Info bar — in normal flow, always visible */}
+                  <div className="flex items-center justify-between gap-2 bg-white px-4 py-3">
+                    <div className="flex min-w-0 flex-col gap-0.5">
+                      <p className="truncate text-sm font-semibold text-[#FF4502]">{project.title}</p>
+                      <div className="flex flex-wrap gap-1">
+                        {project.categories.map((cat) => (
+                          <span key={cat} className="text-xs text-[#FF4502]/70">{cat}</span>
+                        ))}
                       </div>
-                    ))}
+                    </div>
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex shrink-0 items-center gap-1 text-xs font-semibold text-[#FF4502] hover:underline"
+                      >
+                        View live
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 9L9 1M9 1H3M9 1V7" stroke="#FF4502" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}
             </Masonry>
-            {isFetching && (
-              <div className="py-4 text-center text-gray-400">
-                Loading more...
-              </div>
-            )}
           </div>
         </ReactLenis>
       </div>

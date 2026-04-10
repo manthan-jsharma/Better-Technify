@@ -2,22 +2,21 @@
   "hero": {
     "clientsLabel": "Trusted by teams building real products:",
     "callsBooked": "Open for projects",
-    "heading": "Our clients raised $200M+. Yours could be next.",
+    "heading": "Partenered with $3M+ ARR. Yours could be next.",
     "subheading": "Design & development studio for startups that need to ship fast,<br/>look credible, and stop bleeding money on freelancers."
   },
   "services": {
     "heading": "<span>Ship products that raise money</span> <span class=\"text-gray-800\">and convert users.</span>",
-    "description": "We've helped startups raise over $200M combined. From fintech to AI to Web3. our team builds the brands, products, and websites that get you funded, launched, and growing.<br/><br/>Senior designers and developers. 25+ years combined experience. A founder's mentality. because we've been there.<br/><br/>No fluff. No 90-day timelines. Just work that moves the needle.",
+    "description": "We've helped startups raise their capital. From fintech to AI to Automation. our team builds the brands, products, and websites that get you funded, launched, and growing.<br/><br/>Senior designers and developers. 5+ years combined experience. A founder's mentality. because we've been there.<br/><br/>No fluff. No 90-day timelines. Just work that moves the needle.",
     "columns": [
       {
         "title": "Product",
         "items": [
-          "Web Apps",
+          "Custom Saas",
+          "B2B Infra",
           "Dashboards",
           "Mobile Apps",
-          "Defi Apps",
-          "Crypto Exchanges",
-          "Physical"
+          "Destribution Infrastructure"
         ]
       },
       {
@@ -35,8 +34,8 @@
         "title": "Website",
         "items": [
           "Ecommerce",
-          "Crypto/Web3",
-          "Venture Firms",
+          "AI/Automation/CRM",
+          "Fintech/EdTech",
           "SaaS",
           "Portfolios",
           "Landing Pages"
@@ -46,9 +45,9 @@
         "title": "Development",
         "items": [
           "Websites",
-          "Web Apps",
+          "SEO",
           "Mobile Apps",
-          "Defi Platforms",
+          "SME Lead Generation",
           "Databases",
           "Auditing / Consulting"
         ]
@@ -96,57 +95,51 @@
         "quote": "You guys are legends, can't thank you enough. Getting such good feedback on the app from the community",
         "author": "Steve McFadyen",
         "role": "Founder, POAP Global",
-        "date": "March, 2025",
-        "image": "/assets/testimonials/steve.jpg"
+        "date": "March, 2025"
       },
       {
         "quote": "It's a delight to work with this team. Outpace knocked it out of the park with our product and milestones!",
         "author": "Frank Roskam",
         "role": "Co-Founder, Celebratix",
-        "date": "February, 2025",
-        "image": "/assets/testimonials/frank.jpg"
+        "date": "February, 2025"
       },
       {
         "quote": "Amazing designers that live and breath web3. Every design choice they made showed deep strategic thinking and a passion for our mission.",
         "author": "Pedro Galván",
         "role": "Head of Product, AITA Protocol",
-        "date": "January, 2025",
-        "image": "/assets/testimonials/pedro.jpg"
+        "date": "January, 2025"
       },
       {
         "quote": "We've worked closely with the team, and they absolutely nailed the product and our vision.",
         "author": "Dan Korogodsky",
         "role": "Co-Founder, Essai",
-        "date": "December, 2024",
-        "image": "/assets/testimonials/dan.jpg"
+        "date": "December, 2024"
       },
       {
         "quote": "Outpace totally leveled us up. Fast, sharp, and they get Web3. The Glide site looks slick, runs smooth, and just vibes. Absolute legends.",
         "author": "Ryan Colette",
         "role": "Co-Founder, Glide Finance",
-        "date": "November, 2024",
-        "image": "/assets/testimonials/ryan.jpg"
+        "date": "November, 2024"
       },
       {
         "quote": "Outstanding, modern designs with a keen eye for product, branding and user experience. 10/10",
         "author": "Benjamin Piette",
         "role": "Product Team Lead, Elastos Foundation",
-        "date": "October, 2024",
-        "image": "/assets/testimonials/benjamin.jpg"
+        "date": "October, 2024"
       },
       {
         "quote": "Thanks for your amazing work guys, conversions have gone way up! Everything you've delivered over the past few months has been impressive.",
         "author": "Kiarash 'Hoss' Hossainpour",
         "role": "Entrepreneur, Investor, #1 Best-selling author",
-        "date": "April 2025",
-        "image": "/assets/testimonials/kian.jpg"
+        "date": "April 2025"
       },
       {
         "quote": "Forward thinking, creative team with great chemistry. Ahead of the curve when it comes to the latest design trends! Would recommend for those who prioritise branding, UI and UX.",
-        "author": "Maas de Goede",
-        "role": "Co-Founder, Ingenius",
+        "author": "Frank Ocean",
+        "role": "Founder, AI-APP-LABS",
         "date": "January 2025",
-        "image": "/assets/testimonials/maas.jpg"
+        "image": "/images/FrankOcean.jpg",
+        "profileUrl": "https://www.instagram.com/frankocean.88?igsh=MW85Yjk3ZnRnZ3BkeA=="
       }
     ]
   },
@@ -155,13 +148,14 @@
     "needMore": "Looking for something in particular? <br/>Don't hesitate to reach out.",
     "items": [
       {
-        "question": "What does Outpace actually do?",
+        "question": "What does Better Technify actually do?",
         "answer": "We design and build brands, products, and websites that ship fast and scale even faster. Whether you're pre-launch or post-raise, we help you move with clarity and momentum."
       },
       {
-        "question": "What sets Outpace apart?",
+        "question": "What sets Better Technify apart?",
         "answer": "Speed, quality, and custom development. all from one team. Senior talent, streamlined process, zero fluff. We integrate directly into your workflow and ship work that moves the needle. Think in-house, but faster."
       },
+
       {
         "question": "Who do we best work with?",
         "answer": "Founders, startups, agencies. Teams building something real who need senior design and dev firepower without the agency bloat. If that's you. we're in."

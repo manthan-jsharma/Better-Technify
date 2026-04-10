@@ -11,6 +11,7 @@ export type TestimonialColumn = {
   role?: string;
   date?: string;
   image?: string;
+  profileUrl?: string;
 };
 
 interface TestimonialsCarouselProps {

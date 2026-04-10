@@ -6,7 +6,7 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
   color?: string;
 }
 
-const ServiceIcon2 = ({
+const Development = ({
   width = 64,
   height = 64,
   color = "#FF4502",
@@ -27,4 +27,4 @@ const ServiceIcon2 = ({
   </svg>
 );
 
-export default ServiceIcon2;
+export default Development;

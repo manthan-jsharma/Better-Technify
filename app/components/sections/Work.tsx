@@ -91,7 +91,7 @@ const WorkSection: React.FC<WorkSectionProps> = ({
               project ? (
                 <div
                   key={project.id}
-                  className="relative flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-[1.25rem] bg-gray-50 md:aspect-square md:h-full md:rounded-3xl"
+                  className="group flex w-full cursor-pointer flex-col overflow-hidden rounded-[1.25rem] md:h-full md:rounded-3xl"
                   onClick={() => setIsWorkModalOpen(true)}
                   onMouseEnter={() => setHoveredIndex(idx)}
                   onMouseLeave={() => setHoveredIndex(null)}
@@ -100,25 +100,55 @@ const WorkSection: React.FC<WorkSectionProps> = ({
                     lastMousePosRef.current = { x: e.clientX, y: e.clientY };
                   }}
                 >
-                  {project.image ? (
-                    <div className="relative h-full w-full">
+                  {/* Image area */}
+                  <div
+                    className="relative min-h-[160px] flex-1"
+                    style={
+                      project.placeholderBackground
+                        ? { background: project.placeholderBackground }
+                        : { background: "#f3f4f6" }
+                    }
+                  >
+                    {project.image && (
                       <Image
                         src={project.image}
                         alt={project.title}
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1920px"
-                        className={`high-quality-image ${
-                          idx === 2 ? "object-cover" : "object-contain"
-                        } !relative transition-transform duration-300 group-hover:scale-105 md:absolute`}
-                        quality={75}
-                        priority={true}
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        quality={80}
+                        priority={idx < 2}
                         placeholder={project.blurDataURL ? "blur" : "empty"}
                         blurDataURL={project.blurDataURL || undefined}
                       />
+                    )}
+                  </div>
+
+                  {/* Info bar — in normal flow, always visible */}
+                  <div className="flex shrink-0 items-center justify-between gap-2 bg-white px-4 py-3">
+                    <div className="flex min-w-0 flex-col gap-0.5">
+                      <p className="truncate text-sm font-semibold text-[#FF4502]">{project.title}</p>
+                      <div className="flex flex-wrap gap-1">
+                        {project.categories.map((cat) => (
+                          <span key={cat} className="text-xs text-[#FF4502]/70">{cat}</span>
+                        ))}
+                      </div>
                     </div>
-                  ) : (
-                    <div className="h-full w-full bg-gray-300"></div>
-                  )}
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="flex shrink-0 items-center gap-1 text-xs font-semibold text-[#FF4502] hover:underline"
+                      >
+                        View live
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 9L9 1M9 1H3M9 1V7" stroke="#FF4502" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </a>
+                    )}
+                  </div>
                 </div>
               ) : (
                 <div
@@ -141,6 +171,7 @@ const WorkSection: React.FC<WorkSectionProps> = ({
         isOpen={isWorkModalOpen}
         onClose={handleModalClose}
         onBookCall={onBookCall}
+        featuredProjects={featuredProjects.filter(Boolean) as (typeof projects)[0][]}
       />
     </section>
   );

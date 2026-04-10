@@ -552,11 +552,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({ setIsWorkModalOpen }) => {
               ref={tickerRef}
               className="flex flex-wrap items-center justify-center gap-x-8 gap-y-5 md:w-[28rem] md:justify-start"
             >
-              {[1, 2, 3, 5, 7, 8].map((i) => (
+              {[
+                { i: 1, name: "AI APP LABS" },
+                { i: 2, name: "WHOP" },
+              ].map(({ i, name }) => (
                 <TickerIcon
                   key={i}
                   src={`/assets/clients/${i}.svg`}
-                  alt={`Client Logo ${i}`}
+                  alt={name}
+                  name={name}
                 />
               ))}
             </div>
