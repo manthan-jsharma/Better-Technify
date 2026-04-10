@@ -217,7 +217,7 @@ const FAQSection = () => {
                 iconRight
                 className="!pr-3 !pl-4 text-gray-700"
                 onClick={() => {
-                  window.open("https://t.me/jessevermeulen", "_blank");
+                  window.open("https://t.me/Manthan1234567", "_blank");
                 }}
               />
             </div>

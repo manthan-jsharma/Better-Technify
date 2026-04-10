@@ -773,7 +773,7 @@ export default function Navigation({ onBookCall }: NavigationProps) {
                   source: "navigation",
                 });
                 window.open(
-                  "https://t.me/jessevermeulen",
+                  "https://t.me/Manthan1234567",
                   "_blank",
                   "noopener noreferrer"
                 );
