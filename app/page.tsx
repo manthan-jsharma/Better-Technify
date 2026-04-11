@@ -60,6 +60,11 @@ export default function Home() {
           className="flex w-auto flex-col flex-nowrap gap-10 md:h-full md:flex-row md:gap-40"
         >
           <HeroSection setIsWorkModalOpen={setIsWorkModalOpen} />
+          <Breather
+            onBookCall={() => setIsModalOpen(true)}
+            isWorkModalOpen={isWorkModalOpen}
+            setIsWorkModalOpen={setIsWorkModalOpen}
+          />
           <ServiceSection />
           <WorkSection
             onBookCall={() => setIsModalOpen(true)}
@@ -68,11 +73,6 @@ export default function Home() {
           />
           <ProcessSection />
           <TestimonialsSection />
-          <Breather
-            onBookCall={() => setIsModalOpen(true)}
-            isWorkModalOpen={isWorkModalOpen}
-            setIsWorkModalOpen={setIsWorkModalOpen}
-          />
           <PlansSection />
           <FAQSection />
           <BookCallSection />

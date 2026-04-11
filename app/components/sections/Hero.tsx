@@ -455,8 +455,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ setIsWorkModalOpen }) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setShaderInView(true);
-          } else {
-            setShaderInView(false);
+            observer.disconnect(); // once loaded, keep it alive forever
           }
         });
       },

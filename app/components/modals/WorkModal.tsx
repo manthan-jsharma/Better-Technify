@@ -295,12 +295,12 @@ const WorkModal: React.FC<WorkModalProps> = ({ isOpen, onClose, featuredProjects
                   </div>
 
                   {/* Info bar — in normal flow, always visible */}
-                  <div className="flex items-center justify-between gap-2 bg-white px-4 py-3">
+                  <div className="flex items-center justify-between gap-2 bg-gray-900 px-4 py-3">
                     <div className="flex min-w-0 flex-col gap-0.5">
-                      <p className="truncate text-sm font-semibold text-[#FF4502]">{project.title}</p>
+                      <p className="truncate text-sm font-semibold text-white">{project.title}</p>
                       <div className="flex flex-wrap gap-1">
                         {project.categories.map((cat) => (
-                          <span key={cat} className="text-xs text-[#FF4502]/70">{cat}</span>
+                          <span key={cat} className="text-xs text-gray-400">{cat}</span>
                         ))}
                       </div>
                     </div>
