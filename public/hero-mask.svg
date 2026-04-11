@@ -1,15 +1,5 @@
-<svg viewBox="0 0 1000 450" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF5A20" />
-      <stop offset="60%" stop-color="#FF4D15" />
-      <stop offset="100%" stop-color="#F23C05" />
-    </linearGradient>
-  </defs>
-
-  <rect x="0" y="0" width="510" height="450" rx="225" fill="url(#brandGradient)" />
-
-  <path d="M540 210 L 540 80 C 540 35.8 575.8 0 620 0 L 820 0 C 919.4 0 1000 80.6 1000 180 C 1000 196.6 986.6 210 970 210 L 540 210 Z" fill="url(#brandGradient)" />
-
-  <path d="M540 240 L 540 370 C 540 414.2 575.8 450 620 450 L 820 450 C 919.4 450 1000 369.4 1000 270 C 1000 253.4 986.6 240 970 240 L 540 240 Z" fill="url(#brandGradient)" />
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="96" viewBox="0 0 256 96" fill="none">
+<path d="M128 48C128 21.4903 106.51 0 80.0001 0H48C21.4904 0 0 21.4903 0 48C0 74.5097 21.4904 96 48 96H80.0001C106.51 96 128 74.5097 128 48Z" fill="black"/>
+<path d="M128 0H232C245.255 0 256 10.7452 256 24C256 37.2548 245.255 48 232 48H176C149.49 48 128 26.5097 128 0Z" fill="black"/>
+<path d="M192 96C205.255 96 216 85.2548 216 72C216 58.7452 205.255 48 192 48H176C149.49 48 128 69.4903 128 96H192Z" fill="black"/>
 </svg>
