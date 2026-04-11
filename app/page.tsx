@@ -65,12 +65,12 @@ export default function Home() {
             isWorkModalOpen={isWorkModalOpen}
             setIsWorkModalOpen={setIsWorkModalOpen}
           />
-          <ServiceSection />
           <WorkSection
             onBookCall={() => setIsModalOpen(true)}
             isWorkModalOpen={isWorkModalOpen}
             setIsWorkModalOpen={setIsWorkModalOpen}
           />
+          <ServiceSection />
           <ProcessSection />
           <TestimonialsSection />
           <PlansSection />

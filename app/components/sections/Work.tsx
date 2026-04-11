@@ -72,10 +72,24 @@ const WorkSection: React.FC<WorkSectionProps> = ({
     <section
       id="work"
       ref={sectionRef}
-      className="flex w-screen p-6 md:h-full md:min-w-[1304px] md:flex-shrink-0 md:p-10 md:pb-32"
+      className="relative flex w-screen p-6 md:h-full md:min-w-[1304px] md:flex-shrink-0 md:p-10 md:pb-32"
       onMouseEnter={() => setIsPointerActive(true)}
       onMouseLeave={() => setIsPointerActive(false)}
     >
+      {/* Hero mask SVG accent — vertically centred in the section */}
+      <div className="absolute top-1/2 left-10 z-10 -translate-y-1/2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 256 96"
+          aria-hidden="true"
+          style={{ height: "144px", width: "384px" }}
+        >
+          <path style={{ fill: "#FF4502" }} d="M128 48C128 21.4903 106.51 0 80.0001 0H48C21.4904 0 0 21.4903 0 48C0 74.5097 21.4904 96 48 96H80.0001C106.51 96 128 74.5097 128 48Z"/>
+          <path style={{ fill: "#FF4502" }} d="M128 0H232C245.255 0 256 10.7452 256 24C256 37.2548 245.255 48 232 48H176C149.49 48 128 26.5097 128 0Z"/>
+          <path style={{ fill: "#FF4502" }} d="M192 96C205.255 96 216 85.2548 216 72C216 58.7452 205.255 48 192 48H176C149.49 48 128 69.4903 128 96H192Z"/>
+        </svg>
+      </div>
+
       <div className="flex h-full w-full flex-col gap-10 md:flex-row md:gap-40">
         {/* Left column: header/title */}
         <div className="flex flex-col justify-end md:px-8">
@@ -127,10 +141,14 @@ const WorkSection: React.FC<WorkSectionProps> = ({
                   {/* Info bar — in normal flow, always visible */}
                   <div className="flex shrink-0 items-center justify-between gap-2 bg-gray-900 px-4 py-3">
                     <div className="flex min-w-0 flex-col gap-0.5">
-                      <p className="truncate text-sm font-semibold text-white">{project.title}</p>
+                      <p className="truncate text-sm font-semibold text-white">
+                        {project.title}
+                      </p>
                       <div className="flex flex-wrap gap-1">
                         {project.categories.map((cat) => (
-                          <span key={cat} className="text-xs text-gray-400">{cat}</span>
+                          <span key={cat} className="text-xs text-gray-400">
+                            {cat}
+                          </span>
                         ))}
                       </div>
                     </div>
@@ -143,8 +161,20 @@ const WorkSection: React.FC<WorkSectionProps> = ({
                         className="flex shrink-0 items-center gap-1 text-xs font-semibold text-[#FF4502] hover:underline"
                       >
                         View live
-                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1 9L9 1M9 1H3M9 1V7" stroke="#FF4502" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        <svg
+                          width="10"
+                          height="10"
+                          viewBox="0 0 10 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L9 1M9 1H3M9 1V7"
+                            stroke="#FF4502"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
                         </svg>
                       </a>
                     )}
@@ -171,7 +201,9 @@ const WorkSection: React.FC<WorkSectionProps> = ({
         isOpen={isWorkModalOpen}
         onClose={handleModalClose}
         onBookCall={onBookCall}
-        featuredProjects={featuredProjects.filter(Boolean) as (typeof projects)[0][]}
+        featuredProjects={
+          featuredProjects.filter(Boolean) as typeof projects[0][]
+        }
       />
     </section>
   );
